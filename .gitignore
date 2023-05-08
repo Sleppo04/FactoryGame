@@ -1,0 +1,6 @@
+bin/
+.vscode/
+nogit/
+tools/
+*.blend
+*.blend1
