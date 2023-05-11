@@ -3,9 +3,9 @@
 
 typedef struct buffer_s
 {
-    char*  data_start;
-    char*  data_end;
-    size_t allocated_length;
+    char*  dataStart;
+    char*  dataEnd;
+    size_t allocatedLength;
 } buffer_t;
 
 buffer_t* CreateBuffer(size_t size);
