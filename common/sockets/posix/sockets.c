@@ -60,7 +60,7 @@ socket_t CreateSocket(char* address, unsigned short port)
 	int aton_code;
 	in_address.sin_family = AF_INET;
 	in_address.sin_port   = htons(port); // Convert port number to network bytes
-	aton_code = inet_aton(address, &(in_address.sin_addr));
+	aton_code = inet_pton(AF_INET, address, &(in_address.sin_addr));
 	if (aton_code == 0) {
 		errno = EINVAL; // bad string
 		return NULL;
